@@ -17,7 +17,8 @@ header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:bl
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 section{padding:56px 0}h2{font-size:30px;margin:0 0 8px;letter-spacing:-.01em}.sub{color:var(--muted);margin:0 0 30px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:all .2s ease}
+.card:hover{box-shadow:0 10px 25px -5px rgba(0,0,0,0.05);transform:translateY(-2px);border-color:#cbd5e1}
 .card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:15px}
 .tag{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
 .steps{counter-reset:s}.steps .card h3:before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--brand);color:#fff;font-size:14px;margin-right:10px}
@@ -27,4 +28,14 @@ section{padding:56px 0}h2{font-size:30px;margin:0 0 8px;letter-spacing:-.01em}.s
 footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:14px;line-height:1.7}
 footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
 .doc{max-width:820px;padding:48px 20px}.doc h1{font-size:32px}.doc h2{font-size:21px;margin-top:28px}.doc p,.doc li{color:#334155}
+
+/* Naye Medium Filled Icons */
+.card-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+.card-icon svg{width:20px;height:20px;color:#fff;}
+.c-green{background:#22c55e;}
+.c-blue{background:#3b82f6;}
+.c-orange{background:#f97316;}
+.c-purple{background:#a855f7;}
+.c-grey{background:#64748b;}
+
 @media(max-width:700px){.hero h1{font-size:32px}.hero{padding-top:48px;padding-bottom:36px}.nav .links{display:none}section{padding:40px 0}}
